@@ -6,6 +6,12 @@
   flex-direction: column;
   background: #fff;
   color: #111;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:global(.dark) .shell {
+  background: #111;
+  color: #fff;
 }
 
 .main {

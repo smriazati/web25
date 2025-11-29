@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import styles from "@/styles/Header.module.css";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 interface HeaderProps {
   siteName: string;
@@ -16,17 +17,20 @@ const Header = ({ siteName, tagline, navLinks }: HeaderProps) => (
       </Link>
       {/* <p className={styles.tagline}>{tagline}</p> */}
     </div>
-    {/* <nav>
-      <ul className={styles.navList}>
-        {navLinks.map((link) => (
-          <li key={link.href}>
-            <Link href={link.href} className={styles.navLink}>
-              {link.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav> */}
+    <div className={styles.headerRight}>
+      <DarkModeToggle />
+      {/* <nav>
+        <ul className={styles.navList}>
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className={styles.navLink}>
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav> */}
+    </div>
   </header>
 );
 

@@ -4,6 +4,7 @@
   gap: 1rem;
   padding: 1.5rem;
   /* border-bottom: 1px solid #e5e5e5; */
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -15,17 +16,41 @@
   }
 }
 
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .headerRight {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+  }
+}
+
 .siteName {
   font-size: 1.5rem;
   font-weight: 600;
   color: #111;
   text-decoration: none;
+  transition: color 0.2s;
+}
+
+:global(.dark) .siteName {
+  color: #fff;
 }
 
 .tagline {
   margin: 0.25rem 0 0;
   color: #4b5563;
   max-width: 36rem;
+  transition: color 0.2s;
+}
+
+:global(.dark) .tagline {
+  color: #9ca3af;
 }
 
 .navList {
@@ -43,6 +68,11 @@
   letter-spacing: 0.08em;
   color: #111;
   text-decoration: none;
+  transition: color 0.2s;
+}
+
+:global(.dark) .navLink {
+  color: #fff;
 }
 
 .navLink:hover,

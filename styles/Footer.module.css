@@ -10,6 +10,12 @@
 .footer,
 .footer a {
   color: #1a1a1a;
+  transition: color 0.2s;
+}
+
+:global(.dark) .footer,
+:global(.dark) .footer a {
+  color: #e5e5e5;
 }
 
 .footer a {

@@ -8,3 +8,8 @@
 }
 
 
+
+:global(.dark) .backLink {
+  background: #111;
+  color: #fff;
+}

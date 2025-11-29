@@ -16,6 +16,13 @@ body {
   font-family: var(--font-dm-sans), "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #fff;
   color: #111;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root.dark,
+:root.dark body {
+  background-color: #111;
+  color: #fff;
 }
 
 body {

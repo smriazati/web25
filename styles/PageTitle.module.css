@@ -8,6 +8,11 @@
   font-size: 0.8rem;
   color: #6b7280;
   margin-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+
+:global(.dark) .eyebrow {
+  color: #9ca3af;
 }
 
 .title {
@@ -19,4 +24,9 @@
   margin-top: 0.75rem;
   max-width: 45rem;
   color: #374151;
+  transition: color 0.2s;
+}
+
+:global(.dark) .description {
+  color: #d1d5db;
 }
