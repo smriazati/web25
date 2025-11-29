@@ -12,6 +12,15 @@
     "profile content";
 }
 
+@media (max-width: 560px) {
+  .aboutSection {
+    grid-template-columns: 1fr;
+    grid-template-areas: "profile"
+      "title"
+      "content";
+  }
+}
+
 .aboutSection h2 {
   grid-area: title;
 }
@@ -23,6 +32,12 @@
   width: 100%;
   object-fit: cover;
   aspect-ratio: 1/1;
+}
+
+@media (max-width: 560px) {
+  .aboutSection figure {
+    max-width: 100px;
+  }
 }
 
 .aboutSection div {
@@ -44,7 +59,7 @@
 
 @media (max-width: 600px) {
   .bioImages {
-    grid-template-rows: 150px 150px;
+    grid-auto-columns: 100px;
   }
 }
 
@@ -81,7 +96,12 @@
 }
 
 
-
+.previousProjectsList {
+  margin-top: .25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
 
 .previousProjectsListItem {
   display: flex;
