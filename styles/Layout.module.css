@@ -5,13 +5,14 @@
   display: flex;
   flex-direction: column;
   background: #fff;
-  color: #111;
+  color: var(--light-theme-text);
+  ;
   transition: background-color 0.3s, color 0.3s;
 }
 
 :global(.dark) .shell {
-  background: #111;
-  color: #fff;
+  background: var(--dark-theme-bg);
+  color: var(--dark-theme-text);
 }
 
 .main {

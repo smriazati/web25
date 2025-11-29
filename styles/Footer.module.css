@@ -9,7 +9,7 @@
 
 .footer,
 .footer a {
-  color: #1a1a1a;
+  color: var(--light-theme-text);
   transition: color 0.2s;
 }
 

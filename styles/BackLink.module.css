@@ -4,12 +4,12 @@
   align-items: center;
   font-size: 0.8rem;
   margin-top: 2rem;
-  color: #111;
+  color: var(--light-theme-text);
+
 }
 
 
 
 :global(.dark) .backLink {
-  background: #111;
-  color: #fff;
+  color: var(--dark-theme-text);
 }

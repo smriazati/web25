@@ -7,6 +7,10 @@
 
 html {
   font-size: 18px;
+  --light-theme-bg: #fff;
+  --light-theme-text: #290963;
+  --dark-theme-bg: #150139;
+  --dark-theme-text: #fff;
 }
 
 html,
@@ -15,14 +19,16 @@ body {
   margin: 0;
   font-family: var(--font-dm-sans), "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #fff;
-  color: #111;
+  color: var(--light-theme-text);
+  ;
   transition: background-color 0.3s, color 0.3s;
 }
 
 :root.dark,
 :root.dark body {
-  background-color: #111;
-  color: #fff;
+  background-color: var(--dark-theme-bg);
+  color: var(--dark-theme-text);
+  ;
 }
 
 body {
@@ -30,7 +36,11 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--light-theme-text);
+}
+
+:root.dark a {
+  color: var(--dark-theme-text);
 }
 
 img {

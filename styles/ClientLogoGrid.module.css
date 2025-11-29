@@ -11,7 +11,8 @@
   /* align-items: center; */
   gap: 0.5rem;
   text-decoration: none;
-  color: #111;
+  color: var(--light-theme-text);
+
   /* text-align: center; */
 }
 

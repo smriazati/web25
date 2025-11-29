@@ -5,32 +5,37 @@ import styles from "@/styles/DarkModeToggle.module.css";
 
 const DarkModeToggle = () => {
   const [isDark, setIsDark] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    // Check for saved theme preference or default to light mode
+    setHydrated(true);
+
     const savedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
     const shouldBeDark = savedTheme === "dark" || (!savedTheme && prefersDark);
-    
+
     setIsDark(shouldBeDark);
-    if (shouldBeDark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    document.documentElement.classList.toggle("dark", shouldBeDark);
   }, []);
 
+  // Prevent hydration mismatch by hiding the toggle until ready
+  if (!hydrated) {
+    return (
+      <button
+        className={styles.toggle}
+        aria-label="Initializing theme"
+        style={{ visibility: "hidden" }}
+        type="button"
+      />
+    );
+  }
+
   const toggleTheme = () => {
-    const newIsDark = !isDark;
-    setIsDark(newIsDark);
-    
-    if (newIsDark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
+    const next = !isDark;
+    setIsDark(next);
+    document.documentElement.classList.toggle("dark", next);
+    localStorage.setItem("theme", next ? "dark" : "light");
   };
 
   return (
@@ -42,7 +47,10 @@ const DarkModeToggle = () => {
     >
       <span className={styles.icon}>☀️</span>
       <span className={styles.slider}>
-        <span className={`${styles.sliderThumb} ${isDark ? styles.sliderThumbDark : ""}`} />
+        <span
+          className={`${styles.sliderThumb} ${isDark ? styles.sliderThumbDark : ""
+            }`}
+        />
       </span>
       <span className={styles.icon}>🌙</span>
     </button>
@@ -50,4 +58,3 @@ const DarkModeToggle = () => {
 };
 
 export default DarkModeToggle;
-
