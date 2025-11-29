@@ -1,0 +1,35 @@
+{
+  "title": "Motion Graphic Production",
+  "slug": "motion-graphic-production",
+  "description": "Students translate research into motion identities, practicing pacing, transitions, and audio-led edits.",
+  "learningObjectives": [
+    "Develop motion systems for brand narratives",
+    "Animate type and illustration with finesse",
+    "Deliver renders optimized for web"
+  ],
+  "textbookAndScreenings": [
+    "Design for Motion by Austin Shaw",
+    "Buck studio breakdowns",
+    "PBS art documentaries"
+  ],
+  "projects": [
+    "Title sequence study",
+    "Data-driven motion graphic",
+    "Campaign toolkit"
+  ],
+  "semestersAndFormatsTaught": [
+    {
+      "semester": "Spring 2022",
+      "format": "in-person"
+    },
+    {
+      "semester": "Spring 2024",
+      "format": "online"
+    }
+  ],
+  "seo": {
+    "title": "Motion Graphic Production",
+    "description": "Assignments and screenings for Motion Graphic Production.",
+    "featuredImage": "/placeholders/placeholder.jpg"
+  }
+}

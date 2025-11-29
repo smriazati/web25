@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+}
+
+.ratioBox {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  max-width: 800px;
+}
+
+.player {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  color: #4b5563;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,22 @@
+.wrapper {
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0;
+}
+
+.description {
+  margin-top: 0.75rem;
+  max-width: 45rem;
+  color: #374151;
+}

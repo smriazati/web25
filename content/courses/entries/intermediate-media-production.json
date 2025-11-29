@@ -1,0 +1,35 @@
+{
+  "title": "Intermediate Media Production",
+  "slug": "intermediate-media-production",
+  "description": "Studio course that blends cinematography drills with weekly critique circles and collaborative post-production workflows.",
+  "learningObjectives": [
+    "Direct short-form documentaries with clear story arcs",
+    "Apply color theory and grading pipelines",
+    "Facilitate constructive peer critique"
+  ],
+  "textbookAndScreenings": [
+    "Sight, Sound, Motion by Herbert Zettl",
+    "Barry Jenkins short films",
+    "POV documentary shorts"
+  ],
+  "projects": [
+    "Observational portrait film",
+    "Two-camera interview",
+    "Final collaborative short"
+  ],
+  "semestersAndFormatsTaught": [
+    {
+      "semester": "Fall 2023",
+      "format": "in-person"
+    },
+    {
+      "semester": "Spring 2024",
+      "format": "hybrid"
+    }
+  ],
+  "seo": {
+    "title": "Intermediate Media Production",
+    "description": "Course overview and assignments for Intermediate Media Production.",
+    "featuredImage": "/placeholders/placeholder.jpg"
+  }
+}

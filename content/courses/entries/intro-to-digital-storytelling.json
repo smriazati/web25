@@ -1,0 +1,35 @@
+{
+  "title": "Intro to Digital Storytelling",
+  "slug": "intro-to-digital-storytelling",
+  "description": "Students develop original stories across podcasting, video, and the web, emphasizing interviewing and editing craft.",
+  "learningObjectives": [
+    "Structure multi-platform story arcs",
+    "Record broadcast-quality audio",
+    "Edit narratives with clarity and pacing"
+  ],
+  "textbookAndScreenings": [
+    "Out on the Wire by Jessica Abel",
+    "Transom audio workshops",
+    "New York Times Op-Docs"
+  ],
+  "projects": [
+    "Audio vignette",
+    "Short documentary",
+    "Interactive story package"
+  ],
+  "semestersAndFormatsTaught": [
+    {
+      "semester": "Fall 2022",
+      "format": "in-person"
+    },
+    {
+      "semester": "Fall 2024",
+      "format": "online"
+    }
+  ],
+  "seo": {
+    "title": "Intro to Digital Storytelling",
+    "description": "Highlights from Intro to Digital Storytelling.",
+    "featuredImage": "/placeholders/placeholder.jpg"
+  }
+}

@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.projectCard {
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #111;
+}
+
+.projectCard h3 {
+  margin: 0;
+}
+
+.projectCard p {
+  margin-top: 0.5rem;
+  color: #4b5563;
+}

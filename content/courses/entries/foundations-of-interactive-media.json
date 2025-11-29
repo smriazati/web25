@@ -1,0 +1,35 @@
+{
+  "title": "Foundations of Interactive Media",
+  "slug": "foundations-of-interactive-media",
+  "description": "An entry-level creative coding lab covering HTML, CSS, JavaScript, and narrative prototyping.",
+  "learningObjectives": [
+    "Build responsive layouts without frameworks",
+    "Use JavaScript to add interaction and state",
+    "Critique interaction models with accessibility lenses"
+  ],
+  "textbookAndScreenings": [
+    "HTML & CSS by Jon Duckett",
+    "Processing workshop videos",
+    "Eyeo Festival talks"
+  ],
+  "projects": [
+    "Experimental home page",
+    "Interactive essay",
+    "Narrative prototype"
+  ],
+  "semestersAndFormatsTaught": [
+    {
+      "semester": "Fall 2021",
+      "format": "in-person"
+    },
+    {
+      "semester": "Fall 2024",
+      "format": "hybrid"
+    }
+  ],
+  "seo": {
+    "title": "Foundations of Interactive Media",
+    "description": "Learning objectives and projects for Foundations of Interactive Media.",
+    "featuredImage": "/placeholders/placeholder.jpg"
+  }
+}

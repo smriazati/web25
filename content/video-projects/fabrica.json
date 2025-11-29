@@ -1,0 +1,26 @@
+{
+  "title": "Fabrica",
+  "slug": "fabrica",
+  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
+  "stills": [
+    "/placeholders/fabrica-still-1.jpg",
+    "/placeholders/fabrica-still-2.jpg"
+  ],
+  "videos": [
+    {
+      "platform": "youtube",
+      "id": "dQw4w9WgXcQ",
+      "caption": "Fabrica clip 1"
+    },
+    {
+      "platform": "vimeo",
+      "id": "76979871",
+      "caption": "Fabrica clip 2"
+    }
+  ],
+  "seo": {
+    "title": "Fabrica \u2014 Video & Animation",
+    "description": "Fabrica project overview with process notes and motion tests.",
+    "featuredImage": "/placeholders/placeholder.jpg"
+  }
+}

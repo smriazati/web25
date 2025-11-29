@@ -1,0 +1,26 @@
+{
+  "title": "FADER TV",
+  "slug": "fader-tv",
+  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
+  "stills": [
+    "/placeholders/fader-tv-still-1.jpg",
+    "/placeholders/fader-tv-still-2.jpg"
+  ],
+  "videos": [
+    {
+      "platform": "youtube",
+      "id": "dQw4w9WgXcQ",
+      "caption": "FADER TV clip 1"
+    },
+    {
+      "platform": "vimeo",
+      "id": "76979871",
+      "caption": "FADER TV clip 2"
+    }
+  ],
+  "seo": {
+    "title": "FADER TV \u2014 Video & Animation",
+    "description": "FADER TV project overview with process notes and motion tests.",
+    "featuredImage": "/placeholders/placeholder.jpg"
+  }
+}

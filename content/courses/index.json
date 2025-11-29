@@ -1,0 +1,17 @@
+{
+  "title": "College Courses",
+  "slug": "college-courses",
+  "intro": "Curricula designed for emerging storytellers working across motion, code, and installation.",
+  "courses": [
+    { "title": "Intermediate Media Production", "slug": "intermediate-media-production", "shortDescription": "Hybrid studio covering documentary, editing, and critique-led workshops." },
+    { "title": "Motion Graphic Production", "slug": "motion-graphic-production", "shortDescription": "After Effects intensive focused on kinetic typography and brand systems." },
+    { "title": "Foundations of Interactive Media", "slug": "foundations-of-interactive-media", "shortDescription": "Creative coding primer for narrative prototyping." },
+    { "title": "Intermediate Interactive Media", "slug": "intermediate-interactive-media", "shortDescription": "Rapid web experiments across sensors, data viz, and storytelling." },
+    { "title": "Intro to Digital Storytelling", "slug": "intro-to-digital-storytelling", "shortDescription": "Story-first workflows for audio, video, and web publishing." }
+  ],
+  "seo": {
+    "title": "College Courses — Teaching Portfolio",
+    "description": "Syllabi snapshots, learning objectives, and sample projects from five courses.",
+    "featuredImage": "/placeholders/placeholder.jpg"
+  }
+}

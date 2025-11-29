@@ -1,0 +1,26 @@
+{
+  "title": "Overland",
+  "slug": "overland",
+  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
+  "stills": [
+    "/placeholders/overland-still-1.jpg",
+    "/placeholders/overland-still-2.jpg"
+  ],
+  "videos": [
+    {
+      "platform": "youtube",
+      "id": "dQw4w9WgXcQ",
+      "caption": "Overland clip 1"
+    },
+    {
+      "platform": "vimeo",
+      "id": "76979871",
+      "caption": "Overland clip 2"
+    }
+  ],
+  "seo": {
+    "title": "Overland \u2014 Video & Animation",
+    "description": "Overland project overview with process notes and motion tests.",
+    "featuredImage": "/placeholders/placeholder.jpg"
+  }
+}

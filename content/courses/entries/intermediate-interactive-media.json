@@ -1,0 +1,35 @@
+{
+  "title": "Intermediate Interactive Media",
+  "slug": "intermediate-interactive-media",
+  "description": "Students prototype responsive systems powered by APIs, sensors, and multi-screen narratives.",
+  "learningObjectives": [
+    "Fetch and visualize live data",
+    "Prototype spatial and multi-device interfaces",
+    "Document experiments with clarity"
+  ],
+  "textbookAndScreenings": [
+    "Generative Design by Hartmut Bohnacker",
+    "OFFF conference reels",
+    "Eyebeam artist talks"
+  ],
+  "projects": [
+    "Data story microsite",
+    "Installation mock-up",
+    "Collaborative capstone"
+  ],
+  "semestersAndFormatsTaught": [
+    {
+      "semester": "Spring 2023",
+      "format": "studio"
+    },
+    {
+      "semester": "Spring 2025",
+      "format": "in-person"
+    }
+  ],
+  "seo": {
+    "title": "Intermediate Interactive Media",
+    "description": "Labs and assignments for Intermediate Interactive Media.",
+    "featuredImage": "/placeholders/placeholder.jpg"
+  }
+}

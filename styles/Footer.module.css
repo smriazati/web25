@@ -1,0 +1,52 @@
+.footer {
+  padding: 2rem 1.5rem 3rem;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.contactBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.email {
+  color: #111;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socialLinks a {
+  color: #111;
+  text-decoration: none;
+}
+
+.socialLinks a:hover,
+.socialLinks a:focus-visible {
+  text-decoration: underline;
+}
+
+.copy {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 2.5rem 2.5rem 3.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .copy {
+    margin-left: auto;
+  }
+}

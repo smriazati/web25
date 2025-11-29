@@ -1,0 +1,26 @@
+{
+  "title": "Peeing Cloud",
+  "slug": "peeing-cloud",
+  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
+  "stills": [
+    "/placeholders/peeing-cloud-still-1.jpg",
+    "/placeholders/peeing-cloud-still-2.jpg"
+  ],
+  "videos": [
+    {
+      "platform": "youtube",
+      "id": "dQw4w9WgXcQ",
+      "caption": "Peeing Cloud clip 1"
+    },
+    {
+      "platform": "vimeo",
+      "id": "76979871",
+      "caption": "Peeing Cloud clip 2"
+    }
+  ],
+  "seo": {
+    "title": "Peeing Cloud \u2014 Video & Animation",
+    "description": "Peeing Cloud project overview with process notes and motion tests.",
+    "featuredImage": "/placeholders/placeholder.jpg"
+  }
+}
