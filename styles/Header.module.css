@@ -3,7 +3,16 @@
   flex-direction: column;
   gap: 1rem;
   padding: 1.5rem;
-  border-bottom: 1px solid #e5e5e5;
+  /* border-bottom: 1px solid #e5e5e5; */
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+  }
 }
 
 .siteName {
@@ -39,13 +48,4 @@
 .navLink:hover,
 .navLink:focus-visible {
   text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-  .header {
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 2rem 2.5rem;
-  }
 }

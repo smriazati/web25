@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
+import { DM_Sans } from "next/font/google";
 
 import Layout from "@/components/Layout";
 import { getSiteConfig } from "@/lib/content";
 
 import "./globals.css";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+});
 
 const siteConfig = getSiteConfig();
 
@@ -25,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={dmSans.variable}>
         <Layout siteConfig={siteConfig}>{children}</Layout>
       </body>
     </html>

@@ -3,11 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import ImageGallery from "@/components/ImageGallery";
-import PageTitle from "@/components/PageTitle";
 import Section from "@/components/Section";
 import VideoPlayer from "@/components/VideoPlayer";
-import { getVideoProjectBySlug, getVideoProjectSlugs } from "@/lib/content";
+import { getVideoProjectBySlug, getVideoProjectSlugs, getNextProjectSlug } from "@/lib/content";
 import styles from "@/styles/VideoProjectDetail.module.css";
+import { RichParagraphs } from "@/components/RichParagraphs";
+import BackLink from "@/components/BackLink";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -29,6 +30,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: project.seo.title,
     description: project.seo.description,
+    robots: {
+      index: false,
+      follow: true,
+    },
     openGraph: {
       title: project.seo.title,
       description: project.seo.description,
@@ -45,15 +50,30 @@ const VideoProjectPage = async ({ params }: PageProps) => {
     notFound();
   }
 
+  const nextSlug = getNextProjectSlug(slug);
+  const nextProjectHref = nextSlug ? `/video-and-animation/${nextSlug}` : "/video-and-animation";
+
   return (
     <>
-      <PageTitle eyebrow="Video & Animation" title={project.title} description={project.statement} />
+      <div className={styles.breadcrumb}>
+        <Link href="/video-and-animation" className={styles.eyebrow}>
+          Video & Animation
+        </Link>
+      </div>
+      <h1 className={styles.title}>{project.title}</h1>
+      <div className={styles.description}>
+        <RichParagraphs body={project.statement} />
+      </div>
 
-      <Section title="Stills">
-        <ImageGallery images={project.stills} altPrefix={project.title} />
-      </Section>
+      {
+        project.stills && (
+          <Section>
+            <ImageGallery images={project.stills} />
+          </Section>
+        )
+      }
 
-      <Section title="Video Clips">
+      <Section>
         <div className={styles.videoList}>
           {project.videos.map((video) => (
             <VideoPlayer key={`${video.platform}-${video.id}`} video={video} />
@@ -61,9 +81,13 @@ const VideoProjectPage = async ({ params }: PageProps) => {
         </div>
       </Section>
 
-      <Link href="/video-and-animation" className={styles.backLink}>
-        ← Back to all projects
-      </Link>
+      <div className={styles.navigation}>
+        <BackLink href="/video-and-animation">← Back to all video projects</BackLink>
+
+        <Link href={nextProjectHref} className={styles.backLink}>
+          Next project →
+        </Link>
+      </div>
     </>
   );
 };

@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 
 import PageTitle from "@/components/PageTitle";
 import Section from "@/components/Section";
-import { getCourses, getCoursesPage } from "@/lib/content";
+import { getCoursesPage } from "@/lib/content";
 import styles from "@/styles/Courses.module.css";
+import BackLink from "@/components/BackLink";
 
 export const revalidate = false;
 
@@ -22,56 +23,29 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const CollegeCoursesPage = () => {
   const page = getCoursesPage();
-  const courses = getCourses();
 
   return (
     <>
       <PageTitle eyebrow="Teaching" title={page.title} description={page.intro} />
-      <Section title="Courses">
-        <div className={styles.courseList}>
-          {courses.map((course) => (
-            <article key={course.slug} className={styles.courseCard}>
-              <h3>{course.title}</h3>
-              <p>{course.description}</p>
-
+      <div>
+        <ul className={styles.courseList}>
+          {page.courses.map((course) => (
+            <li key={course.slug} className={styles.courseCard}>
+              <h2>{course.title}</h2>
+              <p>{course.shortDescription}</p>
               <div>
-                <strong>Learning objectives</strong>
-                <ul className={styles.metaList}>
-                  {course.learningObjectives.map((objective) => (
-                    <li key={objective}>{objective}</li>
-                  ))}
-                </ul>
+                <h3>University Departments</h3>
+                <p>{course.departments.join(", ")}</p>
               </div>
-
               <div>
-                <strong>Textbook & screenings</strong>
-                <ul className={styles.metaList}>
-                  {course.textbookAndScreenings.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
+                <h3>Semesters offered</h3>
+                <p>{course.semesters.join(", ")}</p>
               </div>
-
-              <div>
-                <strong>Projects</strong>
-                <ul className={styles.projectList}>
-                  {course.projects.map((project) => (
-                    <li key={project}>{project}</li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className={styles.badges}>
-                {course.semestersAndFormatsTaught.map((meeting) => (
-                  <span key={`${meeting.semester}-${meeting.format}`}>
-                    {meeting.semester} · {meeting.format}
-                  </span>
-                ))}
-              </div>
-            </article>
+            </li>
           ))}
-        </div>
-      </Section>
+        </ul>
+      </div>
+      <BackLink href="/">← Back to home</BackLink>
     </>
   );
 };

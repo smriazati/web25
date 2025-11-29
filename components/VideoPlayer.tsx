@@ -1,42 +1,36 @@
+// IframePlayer.tsx
 "use client";
-
-import dynamic from "next/dynamic";
-import type { JSX } from "react";
-
 import styles from "@/styles/VideoPlayer.module.css";
 import { VideoProjectVideo } from "@/types/video-project";
 
-const ReactPlayer = dynamic(() => import("react-player"), {
-  ssr: false,
-}) as unknown as (props: Record<string, unknown>) => JSX.Element;
-
-const videoUrl = (video: VideoProjectVideo) => {
+const iframeUrl = (video: VideoProjectVideo) => {
   if (video.platform === "vimeo") {
-    return `https://vimeo.com/${video.id}`;
+    return `https://player.vimeo.com/video/${video.id}`;
   }
-
-  return `https://www.youtube.com/watch?v=${video.id}`;
+  return `https://www.youtube.com/embed/${video.id}?rel=0&modestbranding=1`;
 };
 
-interface VideoPlayerProps {
+interface IframePlayerProps {
   video: VideoProjectVideo;
 }
 
-const VideoPlayer = ({ video }: VideoPlayerProps) => (
-  <div className={styles.wrapper}>
-    <div className={styles.ratioBox}>
-      <ReactPlayer
-        url={videoUrl(video)}
-        width="100%"
-        height="100%"
-        controls
-        pip={false}
-        light={false}
-        className={styles.player}
-      />
+const IframePlayer = ({ video }: IframePlayerProps) => {
+  const src = iframeUrl(video);
+  return (
+    <div className={styles.wrapper}>
+      {video.caption && <p className={styles.caption}>{video.caption}</p>}
+      <div className={styles.ratioBox}>
+        <iframe
+          src={src}
+          title={video.caption || "video"}
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+        />
+      </div>
     </div>
-    {video.caption && <p className={styles.caption}>{video.caption}</p>}
-  </div>
-);
+  );
+};
 
-export default VideoPlayer;
+export default IframePlayer;

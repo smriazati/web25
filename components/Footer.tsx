@@ -7,25 +7,28 @@ interface FooterProps {
 
 const Footer = ({ siteConfig }: FooterProps) => (
   <footer className={styles.footer}>
-    <div className={styles.contactBlock}>
-      <p>{siteConfig.location}</p>
-      <a href={`mailto:${siteConfig.email}`} className={styles.email}>
-        {siteConfig.email}
-      </a>
-      <p>{siteConfig.availability}</p>
+    <nav>
+      <ul className={styles.contactLinks}>
+        <li>
+          <span className={styles.icon}>📧 </span><a href={`mailto:${siteConfig.email}`} className={styles.email}>
+            <span className={styles.text}>{siteConfig.email}</span>
+          </a>
+        </li>
+        <li>
+          <span className={styles.icon}>👩‍💻 </span>
+          <a href={siteConfig.social.github} target="_blank" rel="noreferrer" className={styles.text}>GitHub</a>
+        </li>
+        <li>
+          <span className={styles.icon}>ℹ️ </span>
+          <a href={siteConfig.social.linkedin} target="_blank" rel="noreferrer" className={styles.text}>LinkedIn</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div className={styles.secondaryInfo}>
+      <p>📍 {siteConfig.location}</p>
     </div>
-    <div className={styles.socialLinks}>
-      <a href={siteConfig.social.github} target="_blank" rel="noreferrer">
-        GitHub
-      </a>
-      <a href={siteConfig.social.linkedin} target="_blank" rel="noreferrer">
-        LinkedIn
-      </a>
-    </div>
-    <p className={styles.copy}>
-      © {new Date().getFullYear()} {siteConfig.siteName}. Built with Next.js.
-    </p>
-  </footer>
+  </footer >
 );
 
 export default Footer;

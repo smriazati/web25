@@ -1,26 +1,54 @@
 {
   "title": "FADER TV",
   "slug": "fader-tv",
-  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
-  "stills": [
-    "/placeholders/fader-tv-still-1.jpg",
-    "/placeholders/fader-tv-still-2.jpg"
+  "statement": [
+    "FADER TV is the YouTube channel for the FADER Magazine, a magazine dedicated to emerging artists and musicians. I produced videos for the channel from 2011-2014, interviewing, filming, recording sound and editing the videos."
   ],
   "videos": [
     {
       "platform": "youtube",
-      "id": "dQw4w9WgXcQ",
-      "caption": "FADER TV clip 1"
+      "id": "WAWfe4uXelo",
+      "caption": "At Home with Action Bronson"
     },
     {
-      "platform": "vimeo",
-      "id": "76979871",
-      "caption": "FADER TV clip 2"
+      "platform": "youtube",
+      "id": "gHxyJSVOxK8",
+      "caption": "At Home with the Lijadu Sisters"
+    },
+    {
+      "platform": "youtube",
+      "id": "KxatakDLWTw",
+      "caption": "At Home with Mykki Blanco"
+    },
+    {
+      "platform": "youtube",
+      "id": "R4nc3nD6aVw",
+      "caption": "Interview with Riff Raff"
+    },
+    {
+      "platform": "youtube",
+      "id": "QToyOuZVxqA",
+      "caption": "Art Show with Steve ESPO Powers"
+    },
+    {
+      "platform": "youtube",
+      "id": "WSZSKhLuqWk",
+      "caption": "At Home with Erika May"
+    },
+    {
+      "platform": "youtube",
+      "id": "8H7cBJgV13c",
+      "caption": "Art Show with Ari Marcopolous"
+    },
+    {
+      "platform": "youtube",
+      "id": "oV5VcRPSbXk",
+      "caption": "Dent May Live at Grand Street Bakery"
     }
   ],
   "seo": {
     "title": "FADER TV \u2014 Video & Animation",
-    "description": "FADER TV project overview with process notes and motion tests.",
+    "description": "",
     "featuredImage": "/placeholders/placeholder.jpg"
   }
 }

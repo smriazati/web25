@@ -1,9 +1,22 @@
 {
   "title": "Video & Animation",
-  "intro": "Commissioned films, broadcast packages, and experimental motion pieces for museums, festivals, and editorial partners.",
   "seo": {
     "title": "Video & Animation Portfolio",
-    "description": "Twelve video and animation case studies with stills, clips, and process notes.",
+    "description": "",
     "featuredImage": "/placeholders/placeholder.jpg"
-  }
+  },
+  "order": [
+    "monumental",
+    "citizen-ashe",
+    "overland",
+    "matt-and-kim",
+    "fader-tv",
+    "joey-badass",
+    "peeing-cloud",
+    "fabrica",
+    "how-to",
+    "alt-ai",
+    "opera-toolkit",
+    "afrofem-perf-routes"
+  ]
 }

@@ -1,26 +1,24 @@
 {
   "title": "Joey Bada$$",
   "slug": "joey-badass",
-  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
-  "stills": [
-    "/placeholders/joey-badass-still-1.jpg",
-    "/placeholders/joey-badass-still-2.jpg"
+  "statement": [
+    "The Pro Era crew and frontman Joey Bada$$ conclude a cross country tour and prepare for a hometown double headline in New York. [Published on The FADER in 2013.](http://www.thefader.com/2013/05/23/documentary-joey-bada-and-pro-eras-beast-coastal-tour/)"
   ],
   "videos": [
     {
       "platform": "youtube",
-      "id": "dQw4w9WgXcQ",
-      "caption": "Joey Bada$$ clip 1"
+      "id": "ApxqZ76df0g",
+      "caption": "Tour documentary"
     },
     {
       "platform": "vimeo",
-      "id": "76979871",
-      "caption": "Joey Bada$$ clip 2"
+      "id": "57385254",
+      "caption": "Unorthodox lyric video"
     }
   ],
   "seo": {
     "title": "Joey Bada$$ \u2014 Video & Animation",
-    "description": "Joey Bada$$ project overview with process notes and motion tests.",
+    "description": "Three days on the bus with Joey Bada$$ and the Pro Era",
     "featuredImage": "/placeholders/placeholder.jpg"
   }
 }

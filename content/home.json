@@ -1,9 +1,109 @@
 {
-  "codeStatement": "I build generous tools and cinematic experiences that keep interfaces human.",
-  "resumeSummary": "Interdisciplinary director with 15+ years across motion, broadcast, and full-stack development. I translate ambiguity into nimble roadmaps, lead collaborative teams, and get polished work into the world.",
+  "codeStatement": [
+    "I’m Sarah Riazati. I design and build front end systems that bring clarity to complex products. My work lives where engineering, UX and product strategy meet. I care deeply about how things look, how they work and how teams build them together. Currently Lead Web Developer at [Carpe](https://mycarpe.com), formerly Senior Software Engineer at [Home Solutions](https://homesolutions.com) & Lead Developer at [Otherlove](https://otherlove.co)."
+  ],
+  "profileImage": {
+    "src": "/images/bio.jpeg",
+    "alt": "headshot of Sarah Riazati, brunette woman wearing a blue shirt and smiling against a white background"
+  },
+  "skills": {
+    "front-end": {
+      "title": "Front End Engineering",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Vue",
+        "Next.js & Nuxt.js",
+        "Node.js",
+        "Sanity",
+        "Shopify (Liquid & React-based custom apps)",
+        "HTML",
+        "CSS & CSS Frameworks",
+        "Component-driven development",
+        "Complex form workflows",
+        "SSR, SSG, and client-side rendering",
+        "Accessibility (WCAG, semantic structure)",
+        "Performance optimization",
+        "Lighthouse & Core Web Vitals",
+        "Testing (Playwright, Vitest/Jest)"
+      ]
+    },
+    "architecture-platforms-tooling": {
+      "title": "Architecture, Platforms & Tooling",
+      "skills": [
+        "Vercel / Netlify",
+        "GCP",
+        "CI/CD (GitHub Actions)",
+        "Build tools (Vite, Webpack, SWC)",
+        "API design fundamentals",
+        "Firebase",
+        "Observability & monitoring",
+        "Pipedream",
+        "Airtable",
+        "Monday",
+        "Notion",
+        "Jira",
+        "AI-assisted development workflows"
+      ]
+    },
+    "ux-design-creative": {
+      "title": "UX, Product & Creative",
+      "skills": [
+        "Figma",
+        "Design systems (tokens, components)",
+        "Adobe Creative Suite",
+        "Prototyping for product direction",
+        "User research collaboration",
+        "Storytelling & creative direction",
+        "Video production & editing",
+        "Curriculum &+ documentation writing"
+      ]
+    },
+    "engineering-collaboration": {
+      "title": "Engineering Collaboration",
+      "skills": [
+        "Cross-functional teamwork with design + product",
+        "Technical documentation",
+        "Code reviews & lightweight mentorship",
+        "Establishing team conventions and UI patterns"
+      ]
+    }
+  },
+  "linkCards": [
+    {
+      "href": "/video-and-animation",
+      "label": "Video & Animation",
+      "icon": "🎥"
+    },
+    {
+      "href": "/web-dev-design",
+      "label": "Freelance Web Projects",
+      "icon": "⚔️"
+    },
+    {
+      "href": "/college-courses",
+      "label": "College Teaching",
+      "icon": "📚"
+    }
+  ],
+  "bioImages": [
+    {
+      "src": "/images/bolex.jpg",
+      "alt": "Sarah Riazati on set looking into a bolex film camera, with hands extending into frame holding a measuring tape to measure focus."
+    },
+    {
+      "src": "/images/collage.jpg",
+      "alt": "Collage of Apple Preview screenshots of Sarah Riazati wearing sunglasses a green plaid dress on the beach in Puerto Rico, with arms outstretched against a blue sky and turquoise water"
+    },
+    {
+      "src": "/images/film.jpg",
+      "alt": "Film photo of Sarah Riazati as a toddler wearing big, hand-me-down jeans and a striped polo, holding  holding yellow sunglasses up to her face against a Nevada desert landscape with an old car in the background"
+    }
+  ],
   "seo": {
-    "title": "Sarah Riazati — Portfolio 2025",
-    "description": "Video, animation, and web systems for cultural and mission-driven teams.",
+    "title": "Sarah Riazati Portfolio",
+    "description": "Thoughtful web systems.",
     "featuredImage": "/placeholders/placeholder.jpg"
   }
 }

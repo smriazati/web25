@@ -4,6 +4,8 @@ export interface CoursesPageCourseSummary {
   title: string;
   slug: string;
   shortDescription: string;
+  departments: string[];
+  semesters: string[];
 }
 
 export interface CoursesPage {

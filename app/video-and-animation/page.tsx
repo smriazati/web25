@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
-import PageTitle from "@/components/PageTitle";
 import Section from "@/components/Section";
+import BackLink from "@/components/BackLink";
 import { getVideoIndexPage, getVideoProjects } from "@/lib/content";
 import styles from "@/styles/VideoProjects.module.css";
 
@@ -26,19 +25,18 @@ const VideoAndAnimationPage = () => {
   const projects = getVideoProjects();
 
   return (
-    <>
-      <PageTitle eyebrow="Video & Animation" title={page.title} description={page.intro} />
-      <Section title="Projects">
+    <div className={styles.container}>
+      <Section title="Video & Animation Projects">
         <div className={styles.list}>
           {projects.map((project) => (
             <Link key={project.slug} href={`/video-and-animation/${project.slug}`} className={styles.projectCard}>
               <h3>{project.title}</h3>
-              <p>{project.statement}</p>
             </Link>
           ))}
         </div>
       </Section>
-    </>
+      <BackLink href="/">← Back to home page</BackLink>
+    </div>
   );
 };
 

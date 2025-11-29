@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
-import PageTitle from "@/components/PageTitle";
-import Section from "@/components/Section";
-import { getCoursesPage, getHomePage, getSiteConfig, getVideoProjects, getWebDevAndDesign } from "@/lib/content";
+import { getHomePage } from "@/lib/content";
 import styles from "@/styles/Home.module.css";
+import { RichParagraphs } from "@/components/RichParagraphs";
+import Image from "next/image";
+import Link from "next/link";
 
 export const revalidate = false;
 
@@ -23,98 +23,55 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const HomePage = () => {
   const home = getHomePage();
-  const site = getSiteConfig();
-  const videoProjects = getVideoProjects();
-  const webDev = getWebDevAndDesign();
-  const coursesPage = getCoursesPage();
-  const heroProject = videoProjects[0]?.title ?? "new work";
-
-  const linkCards = [
-    {
-      href: "/video-and-animation",
-      label: "Video & Animation",
-      description: `Twelve film, broadcast, and installation commissions including ${heroProject}.`,
-    },
-    {
-      href: "/web-dev-design",
-      label: "Freelance Web Clients",
-      description: `${webDev.skills.length} core capabilities powering mission-driven marketing sites.`,
-    },
-    {
-      href: "/college-courses",
-      label: "College Courses",
-      description: `${coursesPage.courses.length} syllabi snapshots with learning objectives and projects.`,
-    },
-  ];
 
   return (
-    <>
-      <PageTitle eyebrow="Portfolio 2025" title="Video, animation, and systems design" description={home.resumeSummary} />
+    <div className={styles.homePage}>
 
-      <Section>
-        <div className={styles.hero}>
-          <p>{home.codeStatement}</p>
-          <p>{site.availability}</p>
-        </div>
-      </Section>
-
-      <Section title="Selected Work">
-        <div className={styles.linkCards}>
-          {linkCards.map((card) => (
-            <Link key={card.href} href={card.href} className={styles.card}>
-              <span>{card.label}</span>
-              <p>{card.description}</p>
-            </Link>
+      <section className={styles.aboutSection}>
+        <h2>👋 About</h2>
+        <figure>
+          <Image src={home.profileImage.src} alt={home.profileImage.alt} width={300} height={300} />
+        </figure>
+        <RichParagraphs body={home.codeStatement} />
+      </section>
+      <section>
+        <h2>💼 Skills</h2>
+        <ul className={styles.skillsList}>
+          {home.skills.map((skill) => (
+            <li key={skill.title} className={styles.skillsListGroup}>
+              <h3 className={styles.skillsTitle}>{skill.title}</h3>
+              <div>
+                <p>{skill.skills.join(", ")}</p>
+              </div>
+            </li>
           ))}
-        </div>
-      </Section>
-
-      <Section title="Contact & Collaborations" id="contact">
-        <div className={styles.contactGrid}>
-          <div className={styles.contactDetails}>
-            <p>{site.location}</p>
-            <p>{site.availability}</p>
-            <ul>
-              <li>
-                <a href={`mailto:${site.email}`}>{site.email}</a>
+        </ul>
+      </section>
+      <div className={styles.homeSecondarySection}>
+        <section
+          className={styles.previousProjects}
+        >
+          <h2 className={styles.previousProjectsTitle}>
+            <span>✨ Previous projects</span>
+          </h2>
+          <ul className={styles.previousProjectsList}>
+            {home.linkCards.map((link) => (
+              <li key={link.href} className={styles.previousProjectsListItem}>
+                <span className={styles.linkCardIcon}>{link.icon}</span>
+                <Link href={link.href}>{link.label}</Link>
               </li>
-              <li>
-                <a href={site.social.github} target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a href={site.social.linkedin} target="_blank" rel="noreferrer">
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <form className={styles.form} name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact" />
-            <p hidden>
-              <label>
-                Don’t fill this out: <input name="bot-field" />
-              </label>
-            </p>
-            <div>
-              <label htmlFor="name">Name</label>
-              <input id="name" name="name" type="text" required />
-            </div>
-            <div>
-              <label htmlFor="email">Email</label>
-              <input id="email" name="email" type="email" required />
-            </div>
-            <div>
-              <label htmlFor="message">Project details</label>
-              <textarea id="message" name="message" rows={4} required />
-            </div>
-            <button type="submit">Send</button>
-          </form>
-        </div>
-      </Section>
-    </>
+            ))}
+          </ul>
+        </section>
+        <section className={styles.bioImages}>
+          {home.bioImages.map((image) => (
+            <figure key={image.src}>
+              <Image src={image.src} alt={image.alt} width={150} height={150} />
+            </figure>
+          ))}
+        </section>
+      </div>
+    </div>
   );
 };
 

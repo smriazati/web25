@@ -1,26 +1,30 @@
 {
   "title": "Matt and Kim",
   "slug": "matt-and-kim",
-  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
-  "stills": [
-    "/placeholders/matt-and-kim-still-1.jpg",
-    "/placeholders/matt-and-kim-still-2.jpg"
+  "statement": [
+    "Matt Johnson and Kim Schifino are Matt and Kim, a pop duo with catchy tracks and an electric live show. I worked with the band to produce documentary, behind-the-scenes content for their album [Lightning](https://www.mattandkim.com/lightning/).",
+    "I directed, filmed and edited content including a documentary about their tour in support of their Lightning album and behind-the-scenes looks at music video shoots. "
   ],
   "videos": [
     {
       "platform": "youtube",
-      "id": "dQw4w9WgXcQ",
-      "caption": "Matt and Kim clip 1"
+      "id": "XiS8-Pf6Vgw",
+      "caption": "Lightning Tour documentary"
     },
     {
-      "platform": "vimeo",
-      "id": "76979871",
-      "caption": "Matt and Kim clip 2"
+      "platform": "youtube",
+      "id": "Kl0T13WKsls",
+      "caption": "It's Alright music video behind-the-scenes"
+    },
+    {
+      "platform": "youtube",
+      "id": "rPrvmctqqtI",
+      "caption": "Let's Go behind the scenes"
     }
   ],
   "seo": {
     "title": "Matt and Kim \u2014 Video & Animation",
-    "description": "Matt and Kim project overview with process notes and motion tests.",
+    "description": "Matt and Kim music videos and tour documentary.",
     "featuredImage": "/placeholders/placeholder.jpg"
   }
 }

@@ -1,63 +1,118 @@
-.hero {
+.homePage {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutSection {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+  grid-template-areas: "profile title"
+    "profile content";
+}
+
+.aboutSection h2 {
+  grid-area: title;
+}
+
+.aboutSection figure {
+  grid-area: profile;
+  clip-path: circle(50% at 50% 50%);
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.aboutSection div {
+  grid-area: content;
+}
+
+.bioImages {
+  display: grid;
+  grid-auto-columns: 150px;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
+
+@media (max-width: 960px) {
+  .bioImages {
+    grid-template-rows: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bioImages {
+    grid-template-rows: 150px 150px;
+  }
+}
+
+.bioImages figure {
+  clip-path: circle(50% at 50% 50%);
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.bioImages figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.skillsList {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 48rem;
 }
 
-.hero p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.skillsTitle {
+  display: inline;
+  padding-right: 4px;
+  font-weight: 400;
+  font-style: italic;
+  white-space: nowrap;
 }
 
-.linkCards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.skillsTitle::after {
+  content: ':';
+}
+
+
+
+
+.previousProjectsListItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.previousProjectsListItem {
+  filter: grayscale(100%);
+  transition: filter 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.previousProjectsListItem :hover,
+.previousProjectsListItem p:focus-visible {
+  filter: grayscale(0%);
+}
+
+.homeSecondarySection {
+  display: flex;
   gap: 1rem;
+  row-gap: 2rem;
+  justify-content: space-between;
 }
 
-.card {
-  border: 1px solid #e5e7eb;
-  padding: 1.5rem;
-  text-decoration: none;
-  color: #111;
-  min-height: 160px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+@media (max-width: 920px) {
+  .homeSecondarySection {
+    flex-direction: column;
+  }
 }
 
-.card span {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  color: #6b7280;
-}
-
-.card p {
-  margin: 0;
-  color: #4b5563;
-}
-
-.contactGrid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.contactDetails {
-  border: 1px solid #e5e7eb;
-  padding: 1.5rem;
-}
-
-.contactDetails ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
+/* 
 .form {
   border: 1px solid #e5e7eb;
   padding: 1.5rem;
@@ -90,10 +145,4 @@
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-}
-
-@media (min-width: 768px) {
-  .contactGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
+} */

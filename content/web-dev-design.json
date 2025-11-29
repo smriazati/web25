@@ -1,31 +1,55 @@
 {
   "title": "Web Development & Design",
   "slug": "web-dev-design",
-  "statement": "I shape adaptable design systems, not just one-off pages. Every build starts with research, modular content models, and a bias toward fast, accessible experiences.",
-  "skills": [
-    "Creative direction",
-    "Next.js + TypeScript",
-    "Sanity CMS",
-    "Design systems",
-    "Web animation",
-    "Accessibility audits"
-  ],
   "clientLogos": [
-    { "name": "Otherlove", "logo": "/logos/placeholder-logo.svg", "url": "https://example.com" },
-    { "name": "Renewal by Andersen", "logo": "/logos/placeholder-logo.svg" },
-    { "name": "Leaf Filter", "logo": "/logos/placeholder-logo.svg" },
-    { "name": "Durham for All", "logo": "/logos/placeholder-logo.svg" },
-    { "name": "Scalawag", "logo": "/logos/placeholder-logo.svg" },
-    { "name": "Pretty in the Pines", "logo": "/logos/placeholder-logo.svg" },
-    { "name": "Society Social", "logo": "/logos/placeholder-logo.svg" },
-    { "name": "Fabrica", "logo": "/logos/placeholder-logo.svg" },
-    { "name": "UNC-Greensboro Dept. of Museum Studies", "logo": "/logos/placeholder-logo.svg" },
-    { "name": "Cook Center on Social Equity", "logo": "/logos/placeholder-logo.svg" },
-    { "name": "Superfree", "logo": "/logos/placeholder-logo.svg" }
+    {
+      "name": "Otherlove",
+      "logo": "/logos/placeholder-logo.svg"
+    },
+    {
+      "name": "Renewal by Andersen",
+      "logo": "/logos/placeholder-logo.svg"
+    },
+    {
+      "name": "Leaf Filter",
+      "logo": "/logos/placeholder-logo.svg"
+    },
+    {
+      "name": "Durham for All",
+      "logo": "/logos/placeholder-logo.svg"
+    },
+    {
+      "name": "Scalawag",
+      "logo": "/logos/placeholder-logo.svg"
+    },
+    {
+      "name": "Pretty in the Pines",
+      "logo": "/logos/placeholder-logo.svg"
+    },
+    {
+      "name": "Society Social",
+      "logo": "/logos/placeholder-logo.svg"
+    },
+    {
+      "name": "Fabrica",
+      "logo": "/logos/placeholder-logo.svg"
+    },
+    {
+      "name": "UNC-Greensboro Dept. of Museum Studies",
+      "logo": "/logos/placeholder-logo.svg"
+    },
+    {
+      "name": "Cook Center on Social Equity",
+      "logo": "/logos/placeholder-logo.svg"
+    },
+    {
+      "name": "Superfree",
+      "logo": "/logos/placeholder-logo.svg"
+    }
   ],
   "seo": {
     "title": "Web Development & Design",
-    "description": "Selected freelance client work and digital systems built for mission-driven orgs.",
+    "description": "Selected freelance client work.",
     "featuredImage": "/placeholders/placeholder.jpg"
   }
 }

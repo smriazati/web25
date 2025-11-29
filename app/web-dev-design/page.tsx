@@ -5,6 +5,7 @@ import PageTitle from "@/components/PageTitle";
 import Section from "@/components/Section";
 import { getWebDevAndDesign } from "@/lib/content";
 import styles from "@/styles/WebDevDesign.module.css";
+import BackLink from "@/components/BackLink";
 
 export const revalidate = false;
 
@@ -26,16 +27,11 @@ const WebDevDesignPage = () => {
 
   return (
     <>
-      <PageTitle eyebrow="Freelance" title={page.title} description={page.statement} />
-      <Section title="Core Skills">
-        <ul className={styles.skillsList}>
-          {page.skills.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-      </Section>
-      <Section title="Client Collaborations">
+      <PageTitle eyebrow="Freelance Web Development & Design" title={page.title} description={page.statement} />
+      <Section title="Clients">
         <ClientLogoGrid logos={page.clientLogos} />
+        <BackLink href="/">← Back to home page</BackLink>
+
       </Section>
     </>
   );

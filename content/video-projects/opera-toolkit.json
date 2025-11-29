@@ -1,0 +1,19 @@
+{
+    "title": "Opera Toolkit",
+    "slug": "opera-toolkit",
+    "statement": [
+        "Opera Toolkit is a set of audiovisual tools for multimedia performance created by Lisa Kori, Gene Kogan and Colin Self."
+    ],
+    "videos": [
+        {
+            "platform": "vimeo",
+            "id": "143183027",
+            "caption": "Promo"
+        }
+    ],
+    "seo": {
+        "title": "Opera Toolki \u2014 Video & Animation",
+        "description": "",
+        "featuredImage": "/placeholders/placeholder.jpg"
+    }
+}

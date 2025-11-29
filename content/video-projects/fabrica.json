@@ -1,26 +1,35 @@
 {
   "title": "Fabrica",
   "slug": "fabrica",
-  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
-  "stills": [
-    "/placeholders/fabrica-still-1.jpg",
-    "/placeholders/fabrica-still-2.jpg"
+  "statement": [
+    "Fabrica Research Centre is a residency for creative talents based in Treviso, Italy.",
+    "As a resident of Fabrica from 2014-2015, I was a video producer in the product design studio. I produced content for the studio, including a documentary short about the creative process for Moleskine. I collaborated with other residents on personal projects, like the animation \"Peeing Cloud\", and the documentary \"Profile of a Musician\", and the behind the scenes of \"Usually Nowhere\". I also worked with filmmakers in the editorial studio on projects, including \"Waiting for the Gods\" by Natalie Welsh and Alessandro Bertelle."
   ],
   "videos": [
     {
-      "platform": "youtube",
-      "id": "dQw4w9WgXcQ",
-      "caption": "Fabrica clip 1"
+      "platform": "vimeo",
+      "id": "749332956",
+      "caption": "Arcobaleno"
     },
     {
       "platform": "vimeo",
-      "id": "76979871",
-      "caption": "Fabrica clip 2"
+      "id": "131269494",
+      "caption": "Profile of a Musician"
+    },
+    {
+      "platform": "vimeo",
+      "id": "127964398",
+      "caption": "Usually Nowhere"
+    },
+    {
+      "platform": "vimeo",
+      "id": "97746955",
+      "caption": "we feel love"
     }
   ],
   "seo": {
     "title": "Fabrica \u2014 Video & Animation",
-    "description": "Fabrica project overview with process notes and motion tests.",
+    "description": "",
     "featuredImage": "/placeholders/placeholder.jpg"
   }
 }

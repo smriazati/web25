@@ -1,26 +1,33 @@
 {
   "title": "Monumental",
   "slug": "monumental",
-  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
+  "statement": [
+    "Experimental documentary short about the legacy of Southern Confederate monuments."
+  ],
   "stills": [
-    "/placeholders/monumental-still-1.jpg",
-    "/placeholders/monumental-still-2.jpg"
+    {
+      "src": "/images/video/monumental/monumental1.jpg",
+      "alt": "Monumental still 1"
+    },
+    {
+      "src": "/images/video/monumental/monumental2.jpg",
+      "alt": "Monumental still 2"
+    },
+    {
+      "src": "/images/video/monumental/monumental3.jpg",
+      "alt": "Monumental still 3"
+    }
   ],
   "videos": [
     {
-      "platform": "youtube",
-      "id": "dQw4w9WgXcQ",
-      "caption": "Monumental clip 1"
-    },
-    {
       "platform": "vimeo",
-      "id": "76979871",
-      "caption": "Monumental clip 2"
+      "id": "319396651",
+      "caption": "Trailer"
     }
   ],
   "seo": {
     "title": "Monumental \u2014 Video & Animation",
-    "description": "Monumental project overview with process notes and motion tests.",
+    "description": "Experimental documentary short about the legacy of Southern Confederate monuments.",
     "featuredImage": "/placeholders/placeholder.jpg"
   }
 }

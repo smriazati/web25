@@ -5,15 +5,14 @@
 }
 
 .logoCard {
-  border: 1px solid #e5e7eb;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  /* align-items: center; */
   gap: 0.5rem;
   text-decoration: none;
   color: #111;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .logoCard img {

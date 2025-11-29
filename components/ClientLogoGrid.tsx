@@ -12,20 +12,14 @@ const ClientLogoGrid = ({ logos }: ClientLogoGridProps) => (
     {logos.map((logo) => {
       const content = (
         <>
-          <Image src={logo.logo} alt={logo.name} width={200} height={80} />
+          {/* <Image src={logo.logo} alt={logo.name} width={200} height={80} /> */}
           <span>{logo.name}</span>
         </>
       );
 
-      return logo.url ? (
-        <a key={logo.name} href={logo.url} target="_blank" rel="noreferrer" className={styles.logoCard}>
-          {content}
-        </a>
-      ) : (
-        <div key={logo.name} className={styles.logoCard}>
-          {content}
-        </div>
-      );
+      return <div key={logo.name} className={styles.logoCard}>
+        {content}
+      </div>
     })}
   </div>
 );

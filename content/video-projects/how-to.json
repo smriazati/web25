@@ -1,26 +1,19 @@
 {
   "title": "How To",
   "slug": "how-to",
-  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
-  "stills": [
-    "/placeholders/how-to-still-1.jpg",
-    "/placeholders/how-to-still-2.jpg"
+  "statement": [
+    "How To is a series of short films about how to do things. I filmed, edited and produced the series from 2014-2016."
   ],
   "videos": [
     {
-      "platform": "youtube",
-      "id": "dQw4w9WgXcQ",
-      "caption": "How To clip 1"
-    },
-    {
       "platform": "vimeo",
-      "id": "76979871",
-      "caption": "How To clip 2"
+      "id": "287158130",
+      "caption": "Experimental Short"
     }
   ],
   "seo": {
     "title": "How To \u2014 Video & Animation",
-    "description": "How To project overview with process notes and motion tests.",
+    "description": "",
     "featuredImage": "/placeholders/placeholder.jpg"
   }
 }

@@ -14,9 +14,9 @@ const Header = ({ siteName, tagline, navLinks }: HeaderProps) => (
       <Link href="/" className={styles.siteName}>
         {siteName}
       </Link>
-      <p className={styles.tagline}>{tagline}</p>
+      {/* <p className={styles.tagline}>{tagline}</p> */}
     </div>
-    <nav>
+    {/* <nav>
       <ul className={styles.navList}>
         {navLinks.map((link) => (
           <li key={link.href}>
@@ -26,7 +26,7 @@ const Header = ({ siteName, tagline, navLinks }: HeaderProps) => (
           </li>
         ))}
       </ul>
-    </nav>
+    </nav> */}
   </header>
 );
 

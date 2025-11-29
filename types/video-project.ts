@@ -9,8 +9,11 @@ export interface VideoProjectVideo {
 export interface VideoProject {
   title: string;
   slug: string;
-  statement: string;
-  stills: string[];
+  statement: string[];
+  stills?: {
+    src: string;
+    alt: string;
+  }[];
   videos: VideoProjectVideo[];
   seo: SeoSchema;
 }

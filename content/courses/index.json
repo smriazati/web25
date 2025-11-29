@@ -3,15 +3,72 @@
   "slug": "college-courses",
   "intro": "Curricula designed for emerging storytellers working across motion, code, and installation.",
   "courses": [
-    { "title": "Intermediate Media Production", "slug": "intermediate-media-production", "shortDescription": "Hybrid studio covering documentary, editing, and critique-led workshops." },
-    { "title": "Motion Graphic Production", "slug": "motion-graphic-production", "shortDescription": "After Effects intensive focused on kinetic typography and brand systems." },
-    { "title": "Foundations of Interactive Media", "slug": "foundations-of-interactive-media", "shortDescription": "Creative coding primer for narrative prototyping." },
-    { "title": "Intermediate Interactive Media", "slug": "intermediate-interactive-media", "shortDescription": "Rapid web experiments across sensors, data viz, and storytelling." },
-    { "title": "Intro to Digital Storytelling", "slug": "intro-to-digital-storytelling", "shortDescription": "Story-first workflows for audio, video, and web publishing." }
+    {
+      "title": "Intermediate Media Production",
+      "slug": "intermediate-media-production",
+      "shortDescription": "Hybrid studio covering documentary, editing, and critique-led workshops. A hands-on approach to learning filmmaking. Students create four short films, individually and in groups, and learn skills in camera operation, audio recording, editing, audio mixing, color correction and lighting.",
+      "departments": [
+        "UNC-Chapel Hill Department of Communications, Duke University Art of the Moving Image"
+      ],
+      "semesters": [
+        "Spring 2022 (2 sections)",
+        "Spring 2020"
+      ]
+    },
+    {
+      "title": "Motion Graphic Production",
+      "slug": "motion-graphic-production",
+      "shortDescription": "Students learn techniques in motion design through a series of assignments designed to both cultivate technical proficiency and to develop a personal style. Students are introduced to software tools including Adobe After Effects, Adobe Illustrator, and Adobe Audition.",
+      "departments": [
+        "UNC-Chapel Hill Department of Communications, Duke University Art of the Moving Image"
+      ],
+      "semesters": [
+        "Fall 2021",
+        "Spring 2020"
+      ]
+    },
+    {
+      "title": "Interactive Graphics ",
+      "slug": "interactive-graphics",
+      "shortDescription": "In this beginner-friendly course, students gain an understanding of how to use  programming languages as creative modes of expression. Through the study of JavaScript in the library p5.js, students work through hands-on exercises in order to gain an understanding of object oriented programming and principles of interactive design.",
+      "departments": [
+        "Duke University Department of Art, Art History & Visual Studies"
+      ],
+      "semesters": [
+        "Summer 2020"
+      ]
+    },
+    {
+      "title": "Foundations of Interactive Media",
+      "slug": "foundations-of-web-development",
+      "shortDescription": "In this class, students are introduced to front-end development languages and user interface design tools. Students examine and understand the value of interactive media in the journalism industry and begin to develop the skills to execute their own ideas.",
+      "departments": [
+        "UNC-Chapel Hill Hussman School of Journalism and Media"
+      ],
+      "semesters": [
+        "Spring 2017",
+        "Summer 2017",
+        "Summer 2018"
+      ]
+    },
+    {
+      "title": "Intro to Digital Storytelling",
+      "slug": "intro-to-digital-storytelling",
+      "shortDescription": "A core storytelling and production course required for all Hussman School of Journalism and Media students. I partnered with the undergraduate department chair to develop and co-author the curriculum, rubric, and project briefs, which span video production, graphic design, and web development.",
+      "departments": [
+        "UNC-Chapel Hill Hussman School of Journalism and Media"
+      ],
+      "semesters": [
+        "Spring 2017",
+        "Fall 2017 (2 sections)",
+        "Fall 2018 (2 sections)",
+        "Summer 2018"
+      ]
+    }
   ],
   "seo": {
     "title": "College Courses — Teaching Portfolio",
-    "description": "Syllabi snapshots, learning objectives, and sample projects from five courses.",
+    "description": "Curricula designed for emerging storytellers working across motion, code, and installation.",
     "featuredImage": "/placeholders/placeholder.jpg"
   }
 }

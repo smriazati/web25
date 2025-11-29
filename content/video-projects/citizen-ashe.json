@@ -1,26 +1,19 @@
 {
   "title": "Citizen Ashe",
   "slug": "citizen-ashe",
-  "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\nut labore et dolore magna aliqua. I turn fragmented footage into narrative structures with\nbold typographic systems.",
-  "stills": [
-    "/placeholders/citizen-ashe-still-1.jpg",
-    "/placeholders/citizen-ashe-still-2.jpg"
+  "statement": [
+    "Directors Rex Miller and Sam Pollard explore the enduring legacy of tennis legend and humanitarian Arthur Ashe in [CITIZEN ASHE](http://www.magpictures.com/citizenashe/), an elegant and poignant feature documentary. The film charts Ashe’s personal evolution from Grand Slam champion to global activist against a tumultuous backdrop that included the civil rights movement, South African apartheid, and the AIDS epidemic. Citizen Ashe premiered at the 2021 Telluride Film Festival, and was released by Magnolia Pictures. It's available for streaming on HBO Max."
   ],
   "videos": [
     {
       "platform": "youtube",
-      "id": "dQw4w9WgXcQ",
-      "caption": "Citizen Ashe clip 1"
-    },
-    {
-      "platform": "vimeo",
-      "id": "76979871",
-      "caption": "Citizen Ashe clip 2"
+      "id": "uzgfFrOOfvs",
+      "caption": "Trailer"
     }
   ],
   "seo": {
     "title": "Citizen Ashe \u2014 Video & Animation",
-    "description": "Citizen Ashe project overview with process notes and motion tests.",
+    "description": "Documenting the activism of tennis player Arthur Ashe",
     "featuredImage": "/placeholders/placeholder.jpg"
   }
 }

@@ -1,5 +1,7 @@
 .shell {
   min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -13,6 +15,6 @@
 
 @media (min-width: 768px) {
   .main {
-    padding: 3rem 2.5rem 4rem;
+    padding: 2rem 2.5rem 4rem;
   }
 }

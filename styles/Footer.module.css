@@ -1,16 +1,40 @@
 .footer {
-  padding: 2rem 1.5rem 3rem;
-  border-top: 1px solid #e5e5e5;
+  padding: 1.5rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
-  font-size: 0.95rem;
+  /* text-transform: uppercase;
+  letter-spacing: 0.08em; */
+
 }
 
-.contactBlock {
+.footer,
+.footer a {
+  color: #1a1a1a;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer li,
+.footer p {
+  font-size: 14px;
+  filter: grayscale(100%);
+  transition: filter 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer li:hover,
+.footer li:focus-visible,
+.footer p:hover,
+.footer p:focus-visible {
+  filter: grayscale(0%);
+}
+
+.contactLinks {
   display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+  gap: 1rem;
 }
 
 .email {
@@ -30,23 +54,4 @@
 .socialLinks a:hover,
 .socialLinks a:focus-visible {
   text-decoration: underline;
-}
-
-.copy {
-  color: #6b7280;
-  font-size: 0.85rem;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    padding: 2.5rem 2.5rem 3.5rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-
-  .copy {
-    margin-left: auto;
-  }
 }

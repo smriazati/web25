@@ -1,12 +1,12 @@
 {
-  "siteName": "Portfolio 2025",
+  "siteName": "Sarah Riazati",
   "tagline": "Art direction, moving images, and thoughtful web systems.",
-  "baseUrl": "https://example.com",
-  "email": "hello@example.com",
+  "baseUrl": "https://sarahriazati.com",
+  "email": "sarahriazati@gmail.com",
   "location": "Durham, NC",
   "availability": "Currently booking select collaborations for Spring 2025.",
   "social": {
-    "github": "https://github.com/example",
-    "linkedin": "https://www.linkedin.com/in/example"
+    "github": "https://github.com/smriazati",
+    "linkedin": "https://www.linkedin.com/in/sarah-riazati"
   }
 }

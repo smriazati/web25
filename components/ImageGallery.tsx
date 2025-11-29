@@ -3,17 +3,19 @@ import Image from "next/image";
 import styles from "@/styles/ImageGallery.module.css";
 
 interface ImageGalleryProps {
-  images: string[];
-  altPrefix: string;
+  images: {
+    src: string;
+    alt: string;
+  }[];
 }
 
-const ImageGallery = ({ images, altPrefix }: ImageGalleryProps) => (
+const ImageGallery = ({ images }: ImageGalleryProps) => (
   <div className={styles.grid}>
-    {images.map((src, index) => (
-      <figure key={`${src}-${index}`} className={styles.figure}>
+    {images.map((image, index) => (
+      <figure key={`${image.src}-${index}`} className={styles.figure}>
         <Image
-          src={src}
-          alt={`${altPrefix} still ${index + 1}`}
+          src={image.src}
+          alt={image.alt}
           width={1200}
           height={675}
           sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 100vw"

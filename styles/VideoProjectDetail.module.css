@@ -17,19 +17,27 @@
   margin-top: 2rem;
 }
 
-.backLink {
-  display: inline-flex;
-  gap: 0.4rem;
-  align-items: center;
+
+.wrapper {
+  margin-bottom: 2rem;
+}
+
+.breadcrumb {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.8rem;
-  margin-top: 2rem;
-  text-decoration: none;
-  color: #111;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
 }
 
-.backLink:hover,
-.backLink:focus-visible {
-  text-decoration: underline;
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
