@@ -32,16 +32,17 @@
     "architecture-platforms-tooling": {
       "title": "Architecture, Platforms & Tooling",
       "skills": [
-        "Vercel / Netlify",
+        "Vercel",
+        "Netlify",
+        "Firebase",
         "GCP",
-        "CI/CD (GitHub Actions)",
+        "GitHub Actions",
         "Build tools (Vite, Webpack, SWC)",
         "API design fundamentals",
-        "Firebase",
         "Observability & monitoring",
         "Workflow design & automation",
         "Project & sprint management (Airtable, Monday, Notion, Jira)",
-        "AI-assisted development workflows"
+        "AI-assisted workflows"
       ]
     },
     "ux-design-creative": {
