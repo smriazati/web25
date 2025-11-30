@@ -1,0 +1,44 @@
+{
+    "title": "Yuna",
+    "slug": "yuna",
+    "statement": [
+        "When Malaysian songstress Yuna came to New York for her first press tour, I worked with her label to create a slate of video content about her New York debut. I created a series of short interview videos to promote her songwriting, collaborations and style. I also documented her New York debut concert, including a glowing introduction by Pharrell (the pair collaborated on her debut single \"Life Your Life\".)"
+    ],
+    "videos": [
+        {
+            "platform": "youtube",
+            "id": "72UrpF66ukk",
+            "caption": "Pharrell introduces Yuna"
+        },
+        {
+            "platform": "youtube",
+            "id": "2xajNx8GdNQ",
+            "caption": "On Performing"
+        },
+        {
+            "platform": "youtube",
+            "id": "riS9T1BeVws",
+            "caption": "Yuna performs 'Island'"
+        },
+        {
+            "platform": "youtube",
+            "id": "3VqbURGpYag",
+            "caption": "On Her Producers"
+        },
+        {
+            "platform": "youtube",
+            "id": "SCsCmJ5y0SU",
+            "caption": "On Songwriting"
+        },
+        {
+            "platform": "youtube",
+            "id": "AdYrByyxfT4",
+            "caption": "On Living Her Life"
+        }
+    ],
+    "seo": {
+        "title": "Yuna \u2014 Video Projects",
+        "description": "",
+        "featuredImage": ""
+    }
+}

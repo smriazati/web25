@@ -18,7 +18,10 @@ const IframePlayer = ({ video }: IframePlayerProps) => {
   const src = iframeUrl(video);
   return (
     <div className={styles.wrapper}>
-      {video.caption && <p className={styles.caption}>{video.caption}</p>}
+      {video.caption && <p className={styles.caption}>
+        <span className={styles.captionIcon}>🎥</span>
+        <span>{video.caption}</span>
+      </p>}
       <div className={styles.ratioBox}>
         <iframe
           src={src}

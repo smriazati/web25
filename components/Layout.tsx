@@ -12,7 +12,7 @@ interface LayoutProps {
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/video-and-animation", label: "Video & Animation" },
+  { href: "/video", label: "Video" },
   { href: "/web-dev-design", label: "Web Dev & Design" },
   { href: "/college-courses", label: "College Courses" },
 ];

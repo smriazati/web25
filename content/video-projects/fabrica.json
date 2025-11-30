@@ -2,8 +2,7 @@
   "title": "Fabrica",
   "slug": "fabrica",
   "statement": [
-    "Fabrica Research Centre is a residency for creative talents based in Treviso, Italy.",
-    "As a resident of Fabrica from 2014-2015, I was a video producer in the product design studio. I produced content for the studio, including a documentary short about the creative process for Moleskine. I collaborated with other residents on personal projects, like the animation \"Peeing Cloud\", and the documentary \"Profile of a Musician\", and the behind the scenes of \"Usually Nowhere\". I also worked with filmmakers in the editorial studio on projects, including \"Waiting for the Gods\" by Natalie Welsh and Alessandro Bertelle."
+    "Fabrica Research Centre is a residency for creative talents based in Treviso, Italy. As a resident of Fabrica from 2014-2015, I was a video producer in the product design studio. I produced content for the studio, including content for clients like L'Arcobaleno & Moleskine, music videos, doc shorts, and installation documentation."
   ],
   "videos": [
     {
@@ -28,8 +27,8 @@
     }
   ],
   "seo": {
-    "title": "Fabrica \u2014 Video & Animation",
+    "title": "Fabrica \u2014 Video Projects",
     "description": "",
-    "featuredImage": "/placeholders/placeholder.jpg"
+    "featuredImage": ""
   }
 }

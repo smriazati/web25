@@ -44,6 +44,23 @@
   grid-area: content;
 }
 
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sectionTitleIcon {
+  filter: grayscale(100%);
+  transition: filter 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sectionTitle:hover .sectionTitleIcon,
+.sectionTitle:focus-visible .sectionTitleIcon {
+  filter: grayscale(0%);
+  animation: var(--slow-wiggle-animation);
+}
+
 .bioImages {
   display: grid;
   grid-auto-columns: 150px;
@@ -109,13 +126,13 @@
   gap: 6px;
 }
 
-.previousProjectsListItem {
+.linkCardIcon {
   filter: grayscale(100%);
   transition: filter 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.previousProjectsListItem :hover,
-.previousProjectsListItem p:focus-visible {
+.previousProjectsListItem:hover .linkCardIcon,
+.previousProjectsListItem:focus-visible .linkCardIcon {
   filter: grayscale(0%);
 }
 

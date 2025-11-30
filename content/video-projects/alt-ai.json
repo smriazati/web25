@@ -1,8 +1,8 @@
 {
-    "title": "Alt-AI",
+    "title": "alt-ai",
     "slug": "alt-ai",
     "statement": [
-        "What possibilities occur at the intersection of artificial intelligence and art? Interviews with artists and thinkers answer this question and more while gathered in New York for the alt-Ai conference in 2016."
+        "Interviews with artists and thinkers answer this question and more while gathered in New York for the alt-Ai conference in 2016."
     ],
     "videos": [
         {
@@ -12,8 +12,8 @@
         }
     ],
     "seo": {
-        "title": "Alt-AI \u2014 Video & Animation",
+        "title": "Alt-AI \u2014 Video Projects",
         "description": "",
-        "featuredImage": "/placeholders/placeholder.jpg"
+        "featuredImage": ""
     }
 }

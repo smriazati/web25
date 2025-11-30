@@ -8,13 +8,36 @@
 .ratioBox {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
+  /* padding-top: 56.25%; */
   max-width: 800px;
-  background: #eaeaea;
+  max-height: 450px;
+  aspect-ratio: 16/9;
+  background: var(--light-theme-text);
+}
+
+:global(.dark) .ratioBox {
+  background: var(--dark-theme-text);
 }
 
 .player {
   position: absolute !important;
   top: 0;
   left: 0;
+}
+
+.caption {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.captionIcon {
+  transition: filter 0.2s;
+  filter: grayscale(100%);
+}
+
+.caption:hover .captionIcon,
+.caption:focus-visible .captionIcon {
+  filter: grayscale(0%);
+  animation: var(--slow-wiggle-animation);
 }

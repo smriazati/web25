@@ -20,16 +20,16 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const VideoAndAnimationPage = () => {
+const VideoPage = () => {
   const page = getVideoIndexPage();
   const projects = getVideoProjects();
 
   return (
     <div className={styles.container}>
-      <Section title="Video & Animation Projects">
+      <Section title="Video Projects">
         <div className={styles.list}>
           {projects.map((project) => (
-            <Link key={project.slug} href={`/video-and-animation/${project.slug}`} className={styles.projectCard}>
+            <Link key={project.slug} href={`/video/${project.slug}`} className={styles.projectCard}>
               <h3>{project.title}</h3>
             </Link>
           ))}
@@ -40,4 +40,4 @@ const VideoAndAnimationPage = () => {
   );
 };
 
-export default VideoAndAnimationPage;
+export default VideoPage;

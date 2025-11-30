@@ -2,7 +2,7 @@
   "title": "Monumental",
   "slug": "monumental",
   "statement": [
-    "Experimental documentary short about the legacy of Southern Confederate monuments."
+    "Experimental documentary short about the legacy of Southern Confederate monuments. Supported by the Princess Grace Foundation USA."
   ],
   "stills": [
     {
@@ -26,8 +26,8 @@
     }
   ],
   "seo": {
-    "title": "Monumental \u2014 Video & Animation",
+    "title": "Monumental \u2014 Video Projects",
     "description": "Experimental documentary short about the legacy of Southern Confederate monuments.",
-    "featuredImage": "/placeholders/placeholder.jpg"
+    "featuredImage": ""
   }
 }

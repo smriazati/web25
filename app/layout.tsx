@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteConfig.siteName,
     description: siteConfig.tagline,
-    images: ["/placeholders/placeholder.jpg"],
+    // images: [""],
   },
 };
 
@@ -36,21 +36,16 @@ export default function RootLayout({
         <Script
           id="theme-init"
           strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  const savedTheme = localStorage.getItem('theme');
-                  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                  const shouldBeDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
-                  if (shouldBeDark) {
-                    document.documentElement.classList.add('dark');
-                  }
-                } catch (e) {}
-              })();
-            `,
-          }}
-        />
+        >{`
+          try {
+            const saved = localStorage.getItem("theme");
+            const system = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const dark = saved === "dark" || (!saved && system);
+            if (dark) {
+              document.documentElement.classList.add("dark");
+            }
+          } catch (e) {}
+        `}</Script>
         <Layout siteConfig={siteConfig}>{children}</Layout>
       </body>
     </html>

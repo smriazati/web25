@@ -51,16 +51,18 @@ const VideoProjectPage = async ({ params }: PageProps) => {
   }
 
   const nextSlug = getNextProjectSlug(slug);
-  const nextProjectHref = nextSlug ? `/video-and-animation/${nextSlug}` : "/video-and-animation";
+  const nextProjectHref = nextSlug ? `/video/${nextSlug}` : "/video";
 
   return (
     <>
       <div className={styles.breadcrumb}>
-        <Link href="/video-and-animation" className={styles.eyebrow}>
-          Video & Animation
+        <Link href="/video" className={styles.eyebrow}>
+          Video
         </Link>
       </div>
-      <h1 className={styles.title}>{project.title}</h1>
+      <h1 className={styles.title}>
+        <span>{project.title}</span>
+      </h1>
       <div className={styles.description}>
         <RichParagraphs body={project.statement} />
       </div>
@@ -82,7 +84,7 @@ const VideoProjectPage = async ({ params }: PageProps) => {
       </Section>
 
       <div className={styles.navigation}>
-        <BackLink href="/video-and-animation">← Back to all video projects</BackLink>
+        <BackLink href="/video">← Back to all video projects</BackLink>
 
         <Link href={nextProjectHref} className={styles.backLink}>
           Next project →

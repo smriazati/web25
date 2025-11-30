@@ -8,9 +8,10 @@
 html {
   font-size: 18px;
   --light-theme-bg: #fff;
-  --light-theme-text: #290963;
+  --light-theme-text: #6112e7;
   --dark-theme-bg: #150139;
   --dark-theme-text: #fff;
+  --slow-wiggle-animation: slowWiggle 2s linear infinite;
 }
 
 html,
@@ -67,4 +68,27 @@ h5,
 h6,
 p {
   font-size: 1rem;
+}
+
+
+@keyframes slowWiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-20deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }

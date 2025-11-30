@@ -22,7 +22,7 @@
         "CSS & CSS Frameworks",
         "Component-driven development",
         "Complex form workflows",
-        "SSR, SSG, and client-side rendering",
+        "SSR, SSG, & client-side rendering",
         "Accessibility (WCAG, semantic structure)",
         "Performance optimization",
         "Lighthouse & Core Web Vitals",
@@ -55,7 +55,7 @@
         "User research collaboration",
         "Storytelling & creative direction",
         "Video production & editing",
-        "Curriculum &+ documentation writing"
+        "Curriculum & documentation writing"
       ]
     },
     "engineering-collaboration": {
@@ -64,14 +64,14 @@
         "Cross-functional teamwork with design + product",
         "Technical documentation",
         "Code reviews & junior developer mentorship",
-        "Establishing team conventions and UI patterns"
+        "Establishing team conventions & UI patterns"
       ]
     }
   },
   "linkCards": [
     {
-      "href": "/video-and-animation",
-      "label": "Video & Animation",
+      "href": "/video",
+      "label": "Video Projects",
       "icon": "🎥"
     },
     {
@@ -97,6 +97,6 @@
   "seo": {
     "title": "Sarah Riazati Portfolio",
     "description": "Thoughtful web systems.",
-    "featuredImage": "/placeholders/placeholder.jpg"
+    "featuredImage": ""
   }
 }
