@@ -1,16 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "@/styles/DarkModeToggle.module.css";
 
 export default function DarkModeToggle() {
-  // Start as null so SSR and client both render identical markup
-  const [isDark, setIsDark] = useState<boolean | null>(null);
-
-  useEffect(() => {
-    const current = document.documentElement.classList.contains("dark");
-    setIsDark(current);
-  }, []);
+  // Lazy initializer avoids useEffect and SSR mismatch
+  const [isDark, setIsDark] = useState<boolean | null>(() => {
+    if (typeof window === "undefined") return null; // SSR
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") return true;
+    if (savedTheme === "light") return false;
+    return document.documentElement.classList.contains("dark");
+  });
 
   const toggleTheme = () => {
     if (isDark === null) return; // not ready
@@ -23,7 +24,7 @@ export default function DarkModeToggle() {
   // Render neutral markup until we know the theme
   const thumbClass =
     isDark === null
-      ? styles.sliderThumb // neutral
+      ? styles.sliderThumb
       : `${styles.sliderThumb} ${isDark ? styles.sliderThumbDark : ""}`;
 
   const aria =
