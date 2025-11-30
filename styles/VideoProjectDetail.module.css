@@ -26,8 +26,12 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.8rem;
-  color: #6b7280;
+  color: var(--light-theme-text);
   margin-bottom: 0.5rem;
+}
+
+:global(.dark) .breadcrumb {
+  color: var(--dark-theme-text);
 }
 
 .title {

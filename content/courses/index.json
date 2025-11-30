@@ -1,14 +1,14 @@
 {
   "title": "College Courses",
   "slug": "college-courses",
-  "intro": "Curricula designed for emerging storytellers working across motion, code, and installation.",
+  "intro": "Curricula designed for emerging storytellers working across video, code, and animation.",
   "courses": [
     {
       "title": "Intermediate Media Production",
       "slug": "intermediate-media-production",
       "shortDescription": "Hybrid studio covering documentary, editing, and critique-led workshops. A hands-on approach to learning filmmaking. Students create four short films, individually and in groups, and learn skills in camera operation, audio recording, editing, audio mixing, color correction and lighting.",
       "departments": [
-        "UNC-Chapel Hill Department of Communications, Duke University Art of the Moving Image"
+        "UNC-Chapel Hill Department of , Duke University Art of the Moving Image"
       ],
       "semesters": [
         "Spring 2022 (2 sections)",
@@ -20,7 +20,7 @@
       "slug": "motion-graphic-production",
       "shortDescription": "Students learn techniques in motion design through a series of assignments designed to both cultivate technical proficiency and to develop a personal style. Students are introduced to software tools including Adobe After Effects, Adobe Illustrator, and Adobe Audition.",
       "departments": [
-        "UNC-Chapel Hill Department of Communications, Duke University Art of the Moving Image"
+        "UNC-Chapel Hill Department of Communication, Duke University Art of the Moving Image"
       ],
       "semesters": [
         "Fall 2021",
@@ -46,9 +46,9 @@
         "UNC-Chapel Hill Hussman School of Journalism and Media"
       ],
       "semesters": [
-        "Spring 2017",
+        "Summer 2018",
         "Summer 2017",
-        "Summer 2018"
+        "Spring 2017"
       ]
     },
     {
@@ -59,16 +59,16 @@
         "UNC-Chapel Hill Hussman School of Journalism and Media"
       ],
       "semesters": [
-        "Spring 2017",
-        "Fall 2017 (2 sections)",
+        "Summer 2018",
         "Fall 2018 (2 sections)",
-        "Summer 2018"
+        "Fall 2017 (2 sections)",
+        "Spring 2017"
       ]
     }
   ],
   "seo": {
     "title": "College Courses — Teaching Portfolio",
-    "description": "Curricula designed for emerging storytellers working across motion, code, and installation.",
+    "description": "Curricula designed for emerging storytellers working across video, code, and animation.",
     "featuredImage": ""
   }
 }
