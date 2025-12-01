@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: .25rem;
+}
+
+.titleIcon {
+    filter: grayscale(100%);
+    transition: filter 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title:hover .titleIcon,
+.title:focus-visible .titleIcon {
+    filter: grayscale(0%);
+    animation: var(--slow-wiggle-animation);
+}
