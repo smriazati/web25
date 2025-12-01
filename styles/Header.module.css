@@ -1,9 +1,8 @@
 .header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
   padding: 1.5rem;
-  /* border-bottom: 1px solid #e5e5e5; */
   position: relative;
 }
 
@@ -11,7 +10,6 @@
   .header {
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
     padding: 1.5rem 2.5rem;
   }
 }
